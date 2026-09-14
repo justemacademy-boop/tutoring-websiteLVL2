@@ -19,6 +19,12 @@ const teamMembers = [
     image: '/images/ukana.jpg',
     bio: "Hi! I'm Ukana Bassey, Co-Founder and Lead Academic Tutor of JU STEM Academy. I graduated from Cornell University studying Biology and Society, and I've dedicated the past 4+ years to making STEM education engaging and accessible. My favorite part of this work is creating those breakthrough moments, when a student goes from frustrated to fascinated, when they realize they're capable of so much more than they thought. Outside of academics I enjoy fashion, photography, and endurance training as valuable pastimes!",
   },
+  {
+    name: 'Tutor Name',
+    title: 'Tutor',
+    image: '/images/placeholder-tutor.jpg',
+    bio: "Hi! I'm [Tutor Name], a tutor at JU STEM Academy. This is placeholder biography text. Share your educational background, the subjects you specialize in, and what you love most about helping students succeed in STEM. Add a personal touch here too, your hobbies, interests, or what inspires you to teach, so students can get to know you before their first session!",
+  },
 ];
 
 export default function TeamPage() {

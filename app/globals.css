@@ -53,12 +53,12 @@ ul {
 }
 
 .logo-wrapper img {
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
 .logo-text {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     margin-left: 10px;
     color: #e4b118;
@@ -69,24 +69,25 @@ ul {
 .nav-cta-wrapper {
     display: flex;
     align-items: center;
-    gap: 30px;
-    margin-left: 48px;
+    gap: 20px;
+    margin-left: auto;
 }
 
 .main-navigation ul {
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 
 .main-navigation li a {
     font-family: 'haskoy', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.5px;
     color: white;
     padding-bottom: 5px;
     position: relative;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .main-navigation li a:hover {
@@ -112,10 +113,10 @@ ul {
     background-color: #e4b118;
     color: #00273d !important;
     font-family: 'haskoy', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 0.5px;
-    padding: 16px 30px;
+    padding: 13px 22px;
     border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(228, 177, 24, 0.3);
@@ -1159,7 +1160,7 @@ footer {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .header-container {
         flex-direction: row;
         justify-content: flex-start;

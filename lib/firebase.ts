@@ -11,40 +11,17 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Lazily initialize Firebase so that it never runs during the server-side
-// build/prerender step (where the NEXT_PUBLIC_* env vars are not available).
-// The real instances are only created on first access, which in this app only
-// happens in the browser (inside effects, event handlers and async calls).
-let _app: FirebaseApp | undefined;
-let _db: Firestore | undefined;
-let _auth: Auth | undefined;
+// Initialize Firebase only when a real API key is present. During a
+// server-side build/prerender where the NEXT_PUBLIC_* env vars may be absent,
+// `app` stays undefined and `db`/`auth` are undefined too. That is safe because
+// every Firebase call in this app runs client-side (inside effects, event
+// handlers and async functions), never during prerender. This exports the REAL
+// Firestore/Auth instances so the Firebase SDK's type checks pass at runtime.
+const app: FirebaseApp | undefined = firebaseConfig.apiKey
+  ? getApps().length === 0
+    ? initializeApp(firebaseConfig)
+    : getApp()
+  : undefined;
 
-function getFirebaseApp(): FirebaseApp {
-  if (!_app) {
-    _app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-  }
-  return _app;
-}
-
-function getDbInstance(): Firestore {
-  if (!_db) _db = getFirestore(getFirebaseApp());
-  return _db;
-}
-
-function getAuthInstance(): Auth {
-  if (!_auth) _auth = getAuth(getFirebaseApp());
-  return _auth;
-}
-
-function createLazyProxy<T extends object>(getInstance: () => T): T {
-  return new Proxy({} as T, {
-    get(_target, prop) {
-      const instance = getInstance();
-      const value = (instance as Record<string | symbol, unknown>)[prop];
-      return typeof value === 'function' ? (value as (...args: unknown[]) => unknown).bind(instance) : value;
-    },
-  });
-}
-
-export const db: Firestore = createLazyProxy(getDbInstance);
-export const auth: Auth = createLazyProxy(getAuthInstance);
+export const db: Firestore = (app ? getFirestore(app) : undefined) as Firestore;
+export const auth: Auth = (app ? getAuth(app) : undefined) as Auth;

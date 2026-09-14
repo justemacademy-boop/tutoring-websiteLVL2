@@ -1,6 +1,6 @@
-import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
+import { initializeApp, getApps, getApp, type FirebaseApp } from 'firebase/app';
+import { getFirestore, type Firestore } from 'firebase/firestore';
+import { getAuth, type Auth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,6 +11,40 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+// Lazily initialize Firebase so that it never runs during the server-side
+// build/prerender step (where the NEXT_PUBLIC_* env vars are not available).
+// The real instances are only created on first access, which in this app only
+// happens in the browser (inside effects, event handlers and async calls).
+let _app: FirebaseApp | undefined;
+let _db: Firestore | undefined;
+let _auth: Auth | undefined;
+
+function getFirebaseApp(): FirebaseApp {
+  if (!_app) {
+    _app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+  }
+  return _app;
+}
+
+function getDbInstance(): Firestore {
+  if (!_db) _db = getFirestore(getFirebaseApp());
+  return _db;
+}
+
+function getAuthInstance(): Auth {
+  if (!_auth) _auth = getAuth(getFirebaseApp());
+  return _auth;
+}
+
+function createLazyProxy<T extends object>(getInstance: () => T): T {
+  return new Proxy({} as T, {
+    get(_target, prop) {
+      const instance = getInstance();
+      const value = (instance as Record<string | symbol, unknown>)[prop];
+      return typeof value === 'function' ? (value as (...args: unknown[]) => unknown).bind(instance) : value;
+    },
+  });
+}
+
+export const db: Firestore = createLazyProxy(getDbInstance);
+export const auth: Auth = createLazyProxy(getAuthInstance);

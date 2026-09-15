@@ -146,7 +146,7 @@ export default function Home() {
               />
               <h3 className="tutor-name">Aatish Sethi</h3>
               <p className="tutor-title">Tutor</p>
-              <p className="tutor-degree">University of Michigan<br />Medical Student</p>
+              <p className="tutor-degree">University of Michigan<br />MS1</p>
             </div>
           </div>
         </div>

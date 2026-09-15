@@ -20,10 +20,10 @@ const teamMembers = [
     bio: "Hi! I'm Ukana Bassey, Co-Founder and Lead Academic Tutor of JU STEM Academy. I graduated from Cornell University studying Biology and Society, and I've dedicated the past 4+ years to making STEM education engaging and accessible. My favorite part of this work is creating those breakthrough moments, when a student goes from frustrated to fascinated, when they realize they're capable of so much more than they thought. Outside of academics I enjoy fashion, photography, and endurance training as valuable pastimes!",
   },
   {
-    name: 'Tutor Name',
+    name: 'Aatish Sethi',
     title: 'Tutor',
-    image: '/images/placeholder-tutor.jpg',
-    bio: "Hi! I'm [Tutor Name], a tutor at JU STEM Academy. This is placeholder biography text. Share your educational background, the subjects you specialize in, and what you love most about helping students succeed in STEM. Add a personal touch here too, your hobbies, interests, or what inspires you to teach, so students can get to know you before their first session!",
+    image: '/images/aatish.jpg',
+    bio: "Hi! I'm Aatish Sethi, a tutor at JU STEM Academy. I'm a first-year medical student at the University of Michigan Medical School and a recent graduate of Brown University, where I received a Sc.B. in Biochemistry and Molecular Biology in May 2026. I have over six years of experience tutoring STEM courses, and I most recently served as a Program Leader for the Math Discipline at Brown University's Sheridan Center for Teaching and Learning and a Teaching Assistant for Cell and Molecular Biology. My interest in teaching first began thanks to my high school Calculus teacher, whose principle of 'learning the why' still drives my teaching and leadership style. At Brown, I was also involved in biological research, studying the progression of ALS, investigating potential therapeutic targets for the disease, and co-authoring two research papers.",
   },
 ];
 

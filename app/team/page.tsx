@@ -29,7 +29,7 @@ const teamMembers = [
     name: 'Bernice Sule',
     title: 'Tutor',
     image: '/images/bernice.jpg',
-    bio: "Hello there! My name is Bernice Sule and I am honored to be one of your tutors at JU STEM Academy. I recently obtained my bachelor's degree in Neuroscience from Pomona College where I mentored and tutored STEM and non-STEM students. In my free time, I enjoy spending time with my friends and family, trying new recipes and getting lost in book pages. I look forward to working with you and helping you achieve your academic goals.",
+    bio: "Hello there! My name is Bernice Sule and I am honored to be a tutor at JU STEM Academy. I recently obtained my bachelor's degree in Neuroscience from Pomona College where I mentored and tutored STEM and non-STEM students. In my free time, I enjoy spending time with my friends and family, trying new recipes and getting lost in book pages. I look forward to working with you and helping you achieve your academic goals.",
   },
 ];
 

@@ -25,6 +25,12 @@ const teamMembers = [
     image: '/images/aatish.jpg',
     bio: "Hi! I'm Aatish Sethi, a tutor at JU STEM Academy. I'm a first-year medical student at the University of Michigan Medical School and a recent graduate of Brown University, where I received a Sc.B. in Biochemistry and Molecular Biology in May 2026. I have over six years of experience tutoring STEM courses, and I most recently served as a Program Leader for the Math Discipline at Brown University's Sheridan Center for Teaching and Learning and a Teaching Assistant for Cell and Molecular Biology. My interest in teaching first began thanks to my high school Calculus teacher, whose principle of 'learning the why' still drives my teaching and leadership style. At Brown, I was also involved in biological research, studying the progression of ALS, investigating potential therapeutic targets for the disease, and co-authoring two research papers.",
   },
+  {
+    name: 'Bernice Sule',
+    title: 'Tutor',
+    image: '/images/placeholder-tutor.jpg',
+    bio: "Hello there! My name is Bernice Sule and I am honored to be one of your tutors at JU STEM Academy. I recently obtained my bachelor's degree in Neuroscience from Pomona College where I mentored and tutored STEM and non-STEM students. In my free time, I enjoy spending time with my friends and family, trying new recipes and getting lost in book pages. I look forward to working with you and helping you achieve your academic goals.",
+  },
 ];
 
 export default function TeamPage() {

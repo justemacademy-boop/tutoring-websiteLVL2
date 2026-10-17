@@ -22,7 +22,7 @@ const teamMembers = [
   {
     name: 'Babatunde Patrick Ajayi',
     title: 'Educational Consultant',
-    image: '/images/babatunde-v2.jpg',
+    image: '/images/babatunde.jpg',
     bio: "Hi! I'm Babatunde Patrick Ajayi, an Educational Consultant at JU STEM Academy. I graduated from Cornell University with a degree in Biology and Society and was inducted into Phi Beta Kappa. At Cornell, I served as a TA/CA for numerous STEM courses, helping students work through challenging material and find their footing academically. As a first-generation college graduate, I know how much it matters to have someone in your corner as you figure out your next steps. I'm excited to offer that support to students, helping them build confidence in STEM and see what they can do with their interests. Outside of work, I really enjoy lifting weights and visiting museums!",
   },
   {

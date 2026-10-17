@@ -47,7 +47,12 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          &copy; {new Date().getFullYear()} JU STEM Academy, Inc. Making STEM Accessible.
+          &copy; 2026 JU STEM Academy, Inc. Making STEM Accessible.
+          <div style={{ marginTop: '10px' }}>
+            <Link href="/privacy-policy" style={{ color: '#e4b118' }}>
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -20,6 +20,12 @@ const teamMembers = [
     bio: "Hi! I'm Ukana Bassey, Co-Founder and Lead Academic Tutor of JU STEM Academy. I graduated from Cornell University studying Biology and Society, and I've dedicated the past 4+ years to making STEM education engaging and accessible. My favorite part of this work is creating those breakthrough moments, when a student goes from frustrated to fascinated, when they realize they're capable of so much more than they thought. Outside of academics I enjoy fashion, photography, and endurance training as valuable pastimes!",
   },
   {
+    name: 'Babatunde Patrick Ajayi',
+    title: 'Educational Consultant',
+    image: '/images/babatunde.jpg',
+    bio: "Hi! I'm Babatunde Patrick Ajayi, an Educational Consultant at JU STEM Academy. I graduated from Cornell University with a degree in Biology and Society and was inducted into Phi Beta Kappa. At Cornell, I served as a TA/CA for numerous STEM courses, helping students work through challenging material and find their footing academically. As a first-generation college graduate, I know how much it matters to have someone in your corner as you figure out your next steps. I'm excited to offer that support to students, helping them build confidence in STEM and see what they can do with their interests. Outside of work, I really enjoy lifting weights and visiting museums!",
+  },
+  {
     name: 'Aatish Sethi',
     title: 'Tutor',
     image: '/images/aatish.jpg',

@@ -16,7 +16,7 @@ const teamMembers = [
   {
     name: 'Ukana Bassey',
     title: 'Co-Founder & Lead Tutor',
-    image: '/images/ukana-v2.jpg',
+    image: '/images/ukana-v3.jpg',
     bio: "Hi! I'm Ukana Bassey, Co-Founder and Lead Academic Tutor of JU STEM Academy. I graduated from Cornell University studying Biology and Society, and I've dedicated the past 4+ years to making STEM education engaging and accessible. My favorite part of this work is creating those breakthrough moments, when a student goes from frustrated to fascinated, when they realize they're capable of so much more than they thought. Outside of academics I enjoy fashion, photography, and endurance training as valuable pastimes!",
   },
   {

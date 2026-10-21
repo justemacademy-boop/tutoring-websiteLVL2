@@ -33,7 +33,7 @@ export default function PromoModal() {
         <i className="fas fa-gift promo-icon"></i>
         <h2 className="promo-title">Refer a Friend and Save!</h2>
         <p className="promo-message">
-          Claim a permanent 25% off your hourly rate when a student you recommend purchases any package!
+          Claim a permanent 20% off your hourly rate when a student you recommend purchases any package!
         </p>
         <Link href="/services" className="promo-cta" onClick={closeModal}>
           View Our Packages

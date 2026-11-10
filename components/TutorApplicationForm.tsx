@@ -18,9 +18,6 @@ const FORMSPREE_FORM_ID = 'xkjwrnjw';
 const FORMSPREE_ENDPOINT = `https://formspree.io/f/${FORMSPREE_FORM_ID}`;
 const CONTACT_EMAIL = 'justemacademy@gmail.com';
 
-const HANDSHAKE_URL =
-  'https://app.joinhandshake.com/public/jobs/11250005?utm_source=web&utm_campaign=job_share&utm_medium=copy_link&utm_content=emp-copy_link-job_page';
-
 const EXPERIENCE_OPTIONS = [
   'Pre-professional Development',
   'High School Subjects',
@@ -359,20 +356,6 @@ export default function TutorApplicationForm() {
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </label>
           </div>
-        </div>
-
-        <div className="handshake-callout">
-          <p>
-            <strong>Or apply through our Handshake posting:</strong>
-          </p>
-          <a 
-            href={HANDSHAKE_URL} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="handshake-button"
-          >
-            Apply via Handshake
-          </a>
         </div>
 
         <button type="submit" className="form-submit-btn" disabled={status === 'loading'}>

@@ -18,7 +18,7 @@ const subjects = [
 
 const packages = [
   { name: 'Trial Package', details: '1 hour', link: 'https://buy.stripe.com/dRmdR9bJ6dspag9dbTf3a08' },
-  { name: 'Foundation Builder', details: '5 hours', link: 'https://buy.stripe.com/28E9ATcNaagdewpfk1f3a04' },
+  { name: 'Foundation Builder', details: '5 hours', link: 'https://buy.stripe.com/3cI9ATcNagEB4VPgo5f3a09' },
   { name: 'Academic Achiever', details: '10 hours', link: 'https://buy.stripe.com/28E4gzaF23RP0Fz7Rzf3a05' },
   { name: 'Excellence Program', details: '20 hours', link: 'https://buy.stripe.com/eVq4gz8wUbkhewpfk1f3a06' },
   { name: "Scholar's Edge", details: '30 hours', link: 'https://buy.stripe.com/7sY28r28w3RP2NH5Jrf3a07' },

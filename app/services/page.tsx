@@ -20,8 +20,8 @@ const packages = [
   { name: 'Trial Package', details: '1 hour', link: 'https://buy.stripe.com/dRmdR9bJ6dspag9dbTf3a08' },
   { name: 'Foundation Builder', details: '5 hours', link: 'https://buy.stripe.com/3cI00j7sQ885cohdbTf3a0a' },
   { name: 'Academic Achiever', details: '10 hours', link: 'https://buy.stripe.com/14AeVd28wbkh73X8VDf3a0b' },
-  { name: 'Excellence Program', details: '20 hours', link: 'https://buy.stripe.com/eVq4gz8wUbkhewpfk1f3a06' },
-  { name: "Scholar's Edge", details: '30 hours', link: 'https://buy.stripe.com/7sY28r28w3RP2NH5Jrf3a07' },
+  { name: 'Excellence Program', details: '20 hours', link: 'https://buy.stripe.com/00w3cv9AYagd5ZT6Nvf3a0c' },
+  { name: "Scholar's Edge", details: '30 hours', link: 'https://buy.stripe.com/aFa28r9AYagd9c5c7Pf3a0d' },
 ];
 
 export default function ServicesPage() {
